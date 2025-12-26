@@ -53,6 +53,7 @@
       }     
     ],
     "independent_cache": true,
+    "client_subnet": "36.5.10.10/24",
     "strategy": "prefer_ipv4"
   },
   "inbounds": [
@@ -370,6 +371,7 @@
   "route": {
     "default_domain_resolver": {
       "server": "google"
+      "client_subnet": "36.5.10.10/24"
     },
     "auto_detect_interface": true,
     "final": "Proxy",
@@ -397,7 +399,7 @@
         "action": "reject"
       },
       {
-        "rule_set": "AWAvenue-Ads-Rule",
+        "rule_set": "geosite-category-ads-all",
         "clash_mode": "global",
         "outbound": "Proxy"
       },

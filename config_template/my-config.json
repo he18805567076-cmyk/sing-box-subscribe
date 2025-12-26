@@ -392,6 +392,16 @@
         "action": "hijack-dns"
       },
       {
+        "rule_set": "geosite-category-ads-all",
+        "clash_mode": "rule",
+        "action": "reject"
+      },
+      {
+        "rule_set": "geosite-category-ads-all",
+        "clash_mode": "global",
+        "outbound": "Proxy"
+      },
+      {
         "clash_mode": "direct",
         "outbound": "direct"
       },

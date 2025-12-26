@@ -48,42 +48,12 @@
         "server": "google"
       },
       {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "rule_set": "geosite-cn",
-        "server": "fakeip"
-      },
-      {
         "rule_set": "geosite-cn",
         "server": "local"
-      },
-      {
-        "type": "logical",
-        "mode": "and",
-        "rules": [
-          {
-            "rule_set": "geosite-geolocation-!cn",
-            "invert": true
-          },
-          {
-            "rule_set": "geoip-cn"
-          }
-        ],
-        "server": "google",
-        "client_subnet": "114.114.114.114/24"
-      },
-      {
-        "query_type": [
-          "A",
-          "AAAA"
-        ],
-        "server": "fakeip"
-      }
+      }     
     ],
+    "client_subnet": "36.5.10.10/24",
     "independent_cache": true,
-    "client_subnet": "1.0.1.0",
     "strategy": "prefer_ipv4"
   },
   "inbounds": [
@@ -406,7 +376,7 @@
     "final": "Proxy",
     "rules": [
       {
-        "inbound": ["tun-in", "mixed-in"],
+        "inbound": ["tproxy-in", "tun-in", "mixed-in"],
         "action": "sniff"
       },
       {

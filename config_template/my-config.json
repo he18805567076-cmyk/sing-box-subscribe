@@ -50,10 +50,15 @@
       {
         "rule_set": "geosite-cn",
         "server": "local"
-      }     
+      },     
+      {
+        "rule_set": "geosite-geolocation-!cn",
+        "invert": true,
+        "server": "google",
+        "client_subnet": "36.5.10.10/24"
+      }
     ],
     "independent_cache": true,
-    "client_subnet": "36.5.10.10/24",
     "strategy": "prefer_ipv4"
   },
   "inbounds": [

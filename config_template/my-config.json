@@ -427,6 +427,20 @@
         "protocol": "quic",
         "action": "reject"
       },
+       {
+        "domain": [
+          "access-point.cloudmessaging.edge.microsoft.com",
+          "sydney.bing.com",
+          "browser.pipe.aria.microsoft.com",
+          "www.bingapis.com",
+          "functional.events.data.microsoft.com",
+          "designer.microsoft.com",
+          "edge.microsoft.com",
+          "copilot.microsoft.com",
+          "edgeservices.bing.com"
+        ],
+          "outbound": "Proxy"
+      },
       {
         "rule_set": "geosite-openai",
         "outbound": "OpenAI"

@@ -48,6 +48,10 @@
         "server": "google"
       },
       {
+        "rule_set": "geosite-dnsblock",
+        "action": "reject"
+      },
+      {
         "rule_set": "geosite-cn",
         "server": "local"
       }    
@@ -392,16 +396,6 @@
         "action": "hijack-dns"
       },
       {
-        "rule_set": "geosite-category-ads-all",
-        "clash_mode": "rule",
-        "action": "reject"
-      },
-      {
-        "rule_set": "geosite-category-ads-all",
-        "clash_mode": "global",
-        "outbound": "Proxy"
-      },
-      {
         "clash_mode": "direct",
         "outbound": "direct"
       },
@@ -493,6 +487,13 @@
       }
     ],
     "rule_set": [
+      {
+        "type": "remote",
+        "tag": "geosite-dnsblock",
+        "format": "binary",
+        "url": "https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main//Filters/AWAvenue-Ads-Rule-Singbox.srs"
+         "download_detour": "Proxy"
+      },
       {
         "tag": "geosite-category-ads-all",
         "type": "remote",

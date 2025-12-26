@@ -24,7 +24,8 @@
         "tag": "google",
         "type": "tls",
         "server": "8.8.8.8",
-        "detour": "Proxy"
+        "detour": "Proxy",
+        "client_subnet": "36.5.10.10/24"
       },
       {
         "tag": "local",
@@ -52,7 +53,6 @@
         "server": "local"
       }     
     ],
-    "client_subnet": "36.5.10.10/24",
     "independent_cache": true,
     "strategy": "prefer_ipv4"
   },
@@ -370,7 +370,7 @@
   ],
   "route": {
     "default_domain_resolver": {
-      "server": "local"
+      "server": "google"
     },
     "auto_detect_interface": true,
     "final": "Proxy",
@@ -393,12 +393,12 @@
         "action": "hijack-dns"
       },
       {
-        "rule_set": "geosite-category-ads-all",
+        "rule_set": "AWAvenue-Ads-Rule",
         "clash_mode": "rule",
         "action": "reject"
       },
       {
-        "rule_set": "geosite-category-ads-all",
+        "rule_set": "AWAvenue-Ads-Rule",
         "clash_mode": "global",
         "outbound": "Proxy"
       },
@@ -416,6 +416,7 @@
           "yacd.metacubex.one",
           "yacd.haishan.me",
           "d.metacubex.one"
+          "signalrs2-relayhub-prod-as02-2.service.signalr.net"
         ],
         "outbound": "direct"
       },
@@ -494,10 +495,10 @@
     ],
     "rule_set": [
       {
-        "tag": "geosite-category-ads-all",
+        "tag": "AWAvenue-Ads-Rule",
         "type": "remote",
-        "format": "binary",
-        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
+        "format": "source",
+        "url": "https://github.boki.moe/https://raw.githubusercontent.com/TG-Twilight/AWAvenue-Ads-Rule/main/Filters/AWAvenue-Ads-Rule-Singbox.json",
         "download_detour": "direct"
       },
       {

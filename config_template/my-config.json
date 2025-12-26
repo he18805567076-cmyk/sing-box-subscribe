@@ -24,8 +24,7 @@
         "tag": "google",
         "type": "tls",
         "server": "8.8.8.8",
-        "detour": "Proxy",
-        "client_subnet": "36.5.10.10/24"
+        "detour": "Proxy"
       },
       {
         "tag": "local",

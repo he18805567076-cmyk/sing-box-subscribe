@@ -392,7 +392,7 @@
         "action": "hijack-dns"
       },
       {
-        "rule_set": "AWAvenue-Ads-Rule",
+        "rule_set": "geosite-category-ads-all",
         "clash_mode": "rule",
         "action": "reject"
       },
@@ -494,10 +494,10 @@
     ],
     "rule_set": [
       {
-        "tag": "AWAvenue-Ads-Rule",
+        "tag": "geosite-category-ads-all",
         "type": "remote",
-        "format": "source",
-        "url": "https://gcore.jsdelivr.net/gh/TG-Twilight/AWAvenue-Ads-Rule@main/Filters/AWAvenue-Ads-Rule-Singbox.json",
+        "format": "binary",
+        "url": "https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@sing/geo/geosite/category-ads-all.srs",
         "download_detour": "direct"
       },
       {

@@ -374,9 +374,15 @@
     "auto_detect_interface": true,
     "final": "Proxy",
     "rules": [
-      {
-        "inbound": ["tproxy-in", "tun-in", "mixed-in"],
-        "action": "sniff"
+     {
+        "action": "sniff",
+        "sniffer": [
+          "http",
+          "tls",
+          "quic",
+          "dns"
+        ],
+        "timeout": "500ms"
       },
       {
         "type": "logical",

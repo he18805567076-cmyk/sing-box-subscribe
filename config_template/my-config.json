@@ -369,8 +369,7 @@
   ],
   "route": {
     "default_domain_resolver": {
-      "server": "google",
-      "client_subnet": "36.5.10.10/24"
+      "server": "local"
     },
     "auto_detect_interface": true,
     "final": "Proxy",

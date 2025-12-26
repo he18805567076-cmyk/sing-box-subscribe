@@ -441,6 +441,14 @@
         ],
           "outbound": "Proxy"
       },
+       {
+          "domain_suffix": [
+          "events.data.microsoft.com",
+          "prod.do.dsp.mp.microsoft.com",
+          "nikke-kr.com"
+        ],
+          "outbound": "Proxy"
+      },
       {
         "rule_set": "geosite-openai",
         "outbound": "OpenAI"

@@ -392,12 +392,12 @@
         "action": "hijack-dns"
       },
       {
-        "rule_set": "geosite-category-ads-all",
+        "rule_set": "AWAvenue-Ads-Rule",
         "clash_mode": "rule",
         "action": "reject"
       },
       {
-        "rule_set": "geosite-category-ads-all",
+        "rule_set": "AWAvenue-Ads-Rule",
         "clash_mode": "global",
         "outbound": "Proxy"
       },

@@ -67,6 +67,7 @@
         "client_subnet": "36.5.0.0/16"
       }    
     ],
+    "final": "google",
     "independent_cache": true,
     "strategy": "prefer_ipv4"
   },

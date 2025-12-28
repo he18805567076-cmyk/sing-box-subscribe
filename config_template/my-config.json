@@ -450,7 +450,8 @@
           "yacd.metacubex.one",
           "yacd.haishan.me",
           "d.metacubex.one",
-          "signalrs2-relayhub-prod-as02-2.service.signalr.net"
+          "signalrs2-relayhub-prod-as02-2.service.signalr.net",
+          "steamcommunity.com"
         ],
         "outbound": "direct"
       },

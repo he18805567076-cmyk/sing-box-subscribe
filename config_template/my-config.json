@@ -450,8 +450,7 @@
           "yacd.metacubex.one",
           "yacd.haishan.me",
           "d.metacubex.one",
-          "signalrs2-relayhub-prod-as02-2.service.signalr.net",
-          "steamcommunity.com"
+          "signalrs2-relayhub-prod-as02-2.service.signalr.net"
         ],
         "outbound": "direct"
       },
@@ -473,7 +472,8 @@
           "designer.microsoft.com",
           "edge.microsoft.com",
           "copilot.microsoft.com",
-          "edgeservices.bing.com"
+          "edgeservices.bing.com",
+          "steamcommunity.com"
         ],
           "outbound": "Proxy"
       },

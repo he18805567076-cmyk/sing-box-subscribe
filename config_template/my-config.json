@@ -473,7 +473,8 @@
           "edge.microsoft.com",
           "copilot.microsoft.com",
           "edgeservices.bing.com",
-          "steamcommunity.com"
+          "steamcommunity.com",
+          "store.steampowered.com"
         ],
           "outbound": "Proxy"
       },

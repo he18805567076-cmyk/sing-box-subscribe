@@ -452,10 +452,6 @@
         "ip_is_private": true,
         "outbound": "direct"
       },
-      {
-        "protocol": "quic",
-        "action": "reject"
-      },
        {
         "domain": [
           "access-point.cloudmessaging.edge.microsoft.com",

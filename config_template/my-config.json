@@ -111,7 +111,7 @@
         "America",
         "Others"
       ],
-      "default": "Proxy"
+      "default": "America"
     },
     {
       "tag":"Google",
@@ -124,7 +124,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "TaiWan"
     },
     {
       "tag":"Telegram",
@@ -150,7 +151,8 @@
         "Japan",
         "America",
         "Others"
-      ]
+      ],
+      "default": "TaiWan"
     },
     {
       "tag":"Facebook",

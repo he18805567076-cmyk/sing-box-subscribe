@@ -84,7 +84,8 @@
           "server": "127.0.0.1",
           "server_port": 7890
         }
-          "include_android_user": [
+      },
+                "include_android_user": [
         0,
         10,
         999
@@ -93,7 +94,6 @@
       "exclude_uid": [
         10404
       ]
-      }
     },
     {
       "tag": "mixed-in",
